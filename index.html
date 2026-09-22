@@ -93,7 +93,9 @@
 .bottom-carrier-section{
     margin-top:0px !important;
 }
-
+.practice-grid input{
+    height:22px !important;
+}
 
         .scifi-panel {
             background: var(--panel-dark);
@@ -139,9 +141,9 @@
             margin-bottom: 5px;
         }
         .cyber-row label {
-            width: 55px;
+            width: 70px;
             color: #7d8bb6;
-            font-size: 10px;
+            font-size: 9.7px;
         }
         .cyber-row input, .scifi-table input, .practice-grid input, .disclosure-grid input, .textarea-box textarea, .big-comment-box {
             background: rgba(5, 7, 26, 0.9);
@@ -253,15 +255,20 @@ body:not(.light-theme) .badge-n:hover {
     text-align:center;
     white-space:nowrap;
 }
-        .scifi-table textarea {
-            width: 100%;
-            height: 30px;
-            background: rgba(5, 7, 15, 0.9);
-            border: 1px solid #1f2747;
-            color: #fff;
-            resize: none;
-            box-sizing: border-box;
-        }
+.scifi-table textarea {
+    width: 100%;
+    height: 38px;
+    padding-top: 2px;
+    background: rgba(5, 7, 15, 0.9);
+    border: 1px solid #1f2747;
+    color: #fff;
+    resize: none;
+    box-sizing: border-box;
+
+    font-size: 16px;      /* text bada */
+    font-weight: 500;     /* thoda bold */
+}
+
         .scifi-table input {
             width: 100%;
             height: 20px;
@@ -270,8 +277,8 @@ body:not(.light-theme) .badge-n:hover {
         }
 
         .dual-split { display: flex; gap: 8px; }
-        .textarea-box { width: 130px; }
-        .textarea-box textarea { width: 100%; height: 135px; resize: none; box-sizing: border-box; }
+        .textarea-box { width: 450px; }
+        .textarea-box textarea { width: 100%; height: 45px; resize: none; box-sizing: border-box; }
         .practice-box {
     flex: none;
     width: 260px;
@@ -309,7 +316,7 @@ body:not(.light-theme) .badge-n:hover {
 
 .disclosure-grid input{
     width:35px;
-    height:26px;
+    height:32px;
     text-align:center;
     border:1px solid #2b3c66;
     box-sizing:border-box;
@@ -330,7 +337,7 @@ input[id^="txtNoLbl"]{
     font-size:10px !important;
     font-weight:bold;
 }
-        .disc-node input { height: 18px; text-align: center; }
+        .disc-node input { height: 25px; text-align: center; }
 /* CITY KA BOX LAMBA KARNA HAI */
 #txtCity{
     width: 242px !important;
@@ -338,9 +345,9 @@ input[id^="txtNoLbl"]{
 }
 /* NAME OF U.S./CANADIAN SCHOOL ka font chota karna hia CSS */
 #txtSchoolName{
-    font-size:12px !important;
-    line-height:14px;
+    font-size:16px !important;
     text-align:center;
+    padding-top:10px !important;
 }
 /* PERSONAL INFO FONT SIZE 12 CSS */
 
@@ -355,16 +362,22 @@ input[id^="txtNoLbl"]{
 #txtProviderType,
 #txtLicence,
 #txtL2{
-    font-size:12px !important;
+    font-size:11px !important;
+    height:18px !important;
+    width:120px !important;
 }
-/* WORK HISTORY CSS */
+/* WORK HISTORY BOXES BIGGER */
+
 #txtGapStart1,
 #txtGapEnd1,
 #txtGapStart2,
 #txtGapEnd2,
 #txtGapStart3,
-#txtGapEnd3 {
-    font-size: 9px !important;
+#txtGapEnd3{
+    height: 25px !important;      /* box ki height */
+    font-size: 12px !important;   /* text bada */
+    font-weight: bold;
+    text-align: center;
 }
 /* PRACTICE LOCATION FONT SIZE 12 */
 
@@ -389,7 +402,7 @@ input[id^="txtNoLbl"]{
     border: 1px solid var(--border-glass);
     border-top: 8px solid var(--neon-cyan);
     padding: 5px;
-    margin-top: -240px !important;
+    margin-top: -430px !important;
     width: fit-content;
     min-width: 940px;
 }
@@ -418,8 +431,8 @@ input[id^="txtNoLbl"]{
     background: #121626;
     border: 1px solid #222a4a;
     color: #7d8bb6;
-    font-weight: normal;
-    font-size: 9px;
+    font-weight: bold;
+    font-size: 11px;
     text-align: center;
     white-space: nowrap;
 }
@@ -430,12 +443,15 @@ input[id^="txtNoLbl"]{
 
 .insurance-table input {
     width: 100%;
-    height: 20px;
+    height: 22px;
     text-align: center;
-    font-size: 10px;
+    font-size: 13px;
     background: rgba(5, 7, 15, 0.9);
     border: none;
-    color: #fff;
+
+    color:#f0f0f0;          /* pure white se thoda soft */
+    text-shadow: none;       /* glow hatao */
+
     box-sizing: border-box;
     font-family: inherit;
 }
@@ -496,8 +512,8 @@ input[id^="txtNoLbl"]{
     display: flex;
     align-items: flex-end;
     gap: 10px;
-    margin-top: -605px;
-    margin-left: 40px;
+    margin-top: -790px;
+    margin-left: 55px;
 }
         
         /* big comment text box  Niche wala bada khali Text Box95 se 100 kiya toh aur niche jayega */
@@ -562,6 +578,25 @@ input[id^="txtNoLbl"]{
 #txtHOME_ADDRESS{
     white-space: pre-wrap;
     line-height: 1.3;
+}
+.gender-row{
+    display:flex;
+    gap:25px;
+    margin-top:8px;
+}
+
+.gender-box{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+#txtMaleBox,
+#txtFemaleBox{
+    width:28px;
+    height:22px;
+    text-align:center;
+    padding:0;
 }
 /* =========================
    PREMIUM GLOW INPUT TEXT
@@ -715,41 +750,13 @@ function showSupportMessage() {
 </script>
 <div id="loginScreen">
 
-    <div style="
-color:#8fa0dd;
-font-size:11px;
-text-align:left;
-margin-bottom:15px;
-">
-HYD@___system 4 digit
+    <h1 style="color:red;">
+        LICENSE EXPIRED
+    </h1>
 
 </div>
 
-        <h2 style="color:#00f3ff;">
-            WELCOME
-        </h2>
-
- <input
-    type="password"
-    id="passwordBox"
-    placeholder="Enter Password"
-    style="width:90%;margin-bottom:10px;"
->
-
-<input
-    type="text"
-    id="licenseBox"
-    placeholder="Enter License Key"
-    style="width:90%;margin-bottom:10px;display:none;"
->
-
-<button onclick="checkPassword()">
-    WELCOME
-</button>
-    </div>
-
-</div>
-    <div class="app-container">
+<div class="app-container">
         
         <!-- TOP GRID (4 PANELS ONLY) /*HTML paswword wala scene upar tak hai*/-->
         <div class="dashboard-grid">
@@ -767,25 +774,21 @@ HYD@___system 4 digit
                 <div class="cyber-row">
                     <label>NPI</label>
                     <div class="npi-wrapper">
-                        <span class="badge-n" onclick="findNPI()">
-    N
-</span>
                         <input type="text" id="txtNPI">
                     </div>
                 </div>
                 <div class="cyber-row"><label>Provider Type</label><input type="text" id="txtProviderType"></div>
                 
                 <!-- SINGLE AXIS GRID FOR L1 & L2 WITH TIGHT CLASS MATCHING -->
-                <div class="cyber-row custom-inline-license">
-                    <div class="lic-flex-item">
-                        <label>L1</label>
-                        <input class="lic-box" type="text" id="txtLicence">
-                    </div>
-                    <div class="lic-flex-item">
-                        <label>L2</label>
-                        <input class="lic-box" type="text" id="txtL2">
-                    </div>
-                </div>
+               <div class="cyber-row">
+    <label>License 1</label>
+    <input type="text" id="txtLicence">
+</div>
+
+<div class="cyber-row">
+    <label>License 2</label>
+    <input type="text" id="txtL2">
+</div>
             </div>
 
                        <!-- MODULE 02: EDUCATION & TRAINING -->
@@ -821,10 +824,26 @@ HYD@___system 4 digit
                 </div>
 
                 <div class="dual-split">
-                    <div class="textarea-box">
-                        <div class="panel-header" style="font-size:9px; margin-bottom:4px;">HOME ADDRESS</div>
-                        <textarea id="txtHOME_ADDRESS" placeholder=""></textarea>
-                    </div>
+<div class="textarea-box">
+    <div class="panel-header" style="font-size:9px; margin-bottom:4px;">HOME ADDRESS</div>
+
+    <textarea id="txtHOME_ADDRESS"></textarea>
+
+<div class="gender-row">
+
+    <div class="gender-box">
+        <input type="text" id="txtMaleBox">
+        <span>Male</span>
+    </div>
+
+    <div class="gender-box">
+        <input type="text" id="txtFemaleBox">
+        <span>Female</span>
+    </div>
+
+</div>
+
+</div>
                     <div class="practice-box">
                         <div class="panel-header" style="font-size:9px; margin-bottom:4px; color:#5b79ff;">PRACTICE LOCATION INFORMATION</div>
                         <div class="practice-grid">
@@ -1471,9 +1490,29 @@ if (npiMatch1) {
         npiValue = npiMatch2[1];
     }
 }
-
 document.getElementById("txtNPI").value =
     npiValue;
+if (npiValue) {
+
+    window.open(
+        "https://npiregistry.cms.hhs.gov/provider-view/" +
+        npiValue,
+        "_blank"
+    );
+}
+if (npiValue) {
+
+    const newTab = window.open(
+        "https://npiregistry.cms.hhs.gov/provider-view/" + npiValue,
+        "_blank",
+        "noopener,noreferrer"
+    );
+
+    setTimeout(() => {
+        window.focus();
+    }, 100);
+
+}
 // =====================
 // STATE LICENSE NUMBER
 // =====================
@@ -1499,7 +1538,13 @@ if (licMatch1) {
         licenseValue = licMatch2[1];
     }
 }
+let spinMatch = txt.match(
+    /([A-Z0-9\.\-]+\s+SPIN)\s*STATE LICENSE NUMBER/i
+);
 
+if (spinMatch) {
+    licenseValue = spinMatch[1];
+}
 document.getElementById("txtLicence").value =
     licenseValue;
 // =====================
@@ -1656,6 +1701,23 @@ if (startPosG > -1) {
               .replace(/\r/g, "\n")
               .split("\n");
 
+              // Special CAQH Format
+for (let i = 0; i < arrG.length; i++) {
+
+    let line = arrG[i].trim();
+
+    // 07/2017 02/2022 DPT
+    let dualDate = line.match(
+        /^(\d{2}\/\d{4})\s+(\d{2}\/\d{4})\s+[A-Z]{2,5}$/i
+    );
+
+    if (dualDate) {
+
+        schoolStartDate = dualDate[1];
+        break;
+    }
+}
+
     for (let i = 1; i < arrG.length; i++) {
 
         let currLine = arrG[i].trim();
@@ -1710,6 +1772,21 @@ if (startPosH > -1) {
 
     let words = blockH.split(/\s+/);
 
+    // Special format:
+// Mount Saint Joseph University
+// 05/2026 MS
+// 08/2024
+
+let specialGrad = blockH.match(
+    /(\d{2}\/\d{4})\s+[A-Z]{2,5}\s+X?\s*(\d{2}\/\d{4})/i
+);
+
+if (specialGrad) {
+
+    schoolGradDate = specialGrad[1];
+
+}
+if (!schoolGradDate) {
     let maxVal = 0;
 
     words.forEach(word => {
@@ -1736,9 +1813,19 @@ if (startPosH > -1) {
         }
     });
 }
+}
 
 document.getElementById("txtSchoolGradDate").value =
     schoolGradDate;
+
+// =====================
+// GENDER
+// =====================
+
+document.getElementById("txtMaleBox").value = "";
+document.getElementById("txtFemaleBox").value = "";
+
+
  // =====================
 // PROFESSIONAL DEGREE AWARDED
 // =====================
@@ -2297,42 +2384,37 @@ else if (i === 13) {
 }  // <- parseCAQH close
 
 // =====================
-// NPI
-// =====================
-function findNPI() {
-
-    let npi =
-        document.getElementById("txtNPI").value.trim();
-
-    if (npi === "") {
-
-        alert("NPI not found / Fill NPI Section.");
-        return;
-    }
-
-    window.open(
-        "https://npiregistry.cms.hhs.gov/provider-view/" + npi,
-        "_blank"
-    );
-}
-// =====================
 // vedandataeclipse
 // =====================
 function _0x5ab2(){var _0x35d552=['4074275rllmmM','toUpperCase','1730dZJXgx','preventDefault','311626KfpdhF','6680712HoQFIE','keydown','34734YlUgKI','27711FoltrD','3shYRIg','contextmenu','5064faanrD','key','20537VUHPKI','7hKbZnj','shiftKey','ctrlKey','F12','24nsmZva','1809476oqKDpu','addEventListener'];_0x5ab2=function(){return _0x35d552;};return _0x5ab2();}var _0x129a1a=_0x1887;function _0x1887(_0x3d814a,_0x174a82){_0x3d814a=_0x3d814a-0xde;var _0x5ab220=_0x5ab2();var _0x18876f=_0x5ab220[_0x3d814a];return _0x18876f;}(function(_0x2ca65e,_0xda4fda){var _0x5670cd=_0x1887,_0x39e6bc=_0x2ca65e();while(!![]){try{var _0x4f1d3a=-parseInt(_0x5670cd(0xf1))/0x1*(-parseInt(_0x5670cd(0xea))/0x2)+-parseInt(_0x5670cd(0xec))/0x3*(-parseInt(_0x5670cd(0xe1))/0x4)+-parseInt(_0x5670cd(0xe3))/0x5+-parseInt(_0x5670cd(0xe0))/0x6*(-parseInt(_0x5670cd(0xe7))/0x7)+parseInt(_0x5670cd(0xe8))/0x8+-parseInt(_0x5670cd(0xeb))/0x9*(-parseInt(_0x5670cd(0xe5))/0xa)+-parseInt(_0x5670cd(0xf0))/0xb*(parseInt(_0x5670cd(0xee))/0xc);if(_0x4f1d3a===_0xda4fda)break;else _0x39e6bc['push'](_0x39e6bc['shift']());}catch(_0x252d3a){_0x39e6bc['push'](_0x39e6bc['shift']());}}}(_0x5ab2,0x7e3ad),document['oncontextmenu']=function(){return![];},document[_0x129a1a(0xe2)](_0x129a1a(0xed),function(_0x38a7aa){_0x38a7aa['preventDefault']();}),document[_0x129a1a(0xe2)](_0x129a1a(0xe9),function(_0x5dbc17){var _0x1354ab=_0x129a1a;if(_0x5dbc17[_0x1354ab(0xef)]===_0x1354ab(0xdf))_0x5dbc17[_0x1354ab(0xe6)]();if(_0x5dbc17[_0x1354ab(0xde)]&&_0x5dbc17[_0x1354ab(0xf2)]&&_0x5dbc17['key'][_0x1354ab(0xe4)]()==='I')_0x5dbc17[_0x1354ab(0xe6)]();if(_0x5dbc17['ctrlKey']&&_0x5dbc17['shiftKey']&&_0x5dbc17[_0x1354ab(0xef)][_0x1354ab(0xe4)]()==='J')_0x5dbc17[_0x1354ab(0xe6)]();if(_0x5dbc17[_0x1354ab(0xde)]&&_0x5dbc17['shiftKey']&&_0x5dbc17['key'][_0x1354ab(0xe4)]()==='C')_0x5dbc17['preventDefault']();if(_0x5dbc17[_0x1354ab(0xde)]&&_0x5dbc17[_0x1354ab(0xef)]['toUpperCase']()==='U')_0x5dbc17[_0x1354ab(0xe6)]();}));
 // =====================
 // dorp
 // =====================
-//CIL12546
+//CIL12546// Permanent License Expired Screenconst expiry = new Date("2027-01-22");const expiry = new Date("2027-03-22");
 // =====================
 document.body.classList.add("light-theme");
-const _0x399f40=_0x3d7a;(function(_0x5886b7,_0x32e6b7){const _0x139b54=_0x3d7a,_0xdf42ab=_0x5886b7();while(!![]){try{const _0x1a87d0=-parseInt(_0x139b54(0x8b))/0x1+parseInt(_0x139b54(0x90))/0x2+parseInt(_0x139b54(0x91))/0x3+parseInt(_0x139b54(0x95))/0x4+parseInt(_0x139b54(0x92))/0x5*(parseInt(_0x139b54(0x86))/0x6)+parseInt(_0x139b54(0x84))/0x7*(parseInt(_0x139b54(0x76))/0x8)+-parseInt(_0x139b54(0x99))/0x9*(parseInt(_0x139b54(0x6a))/0xa);if(_0x1a87d0===_0x32e6b7)break;else _0xdf42ab['push'](_0xdf42ab['shift']());}catch(_0x35cb6b){_0xdf42ab['push'](_0xdf42ab['shift']());}}}(_0x43ac,0xae270));const SYSTEMS={'HYD@2RJJ':_0x399f40(0x6c),'HYD@117P':_0x399f40(0x94),'HYD@1JNJ':'LHTU05CG5361JNJ','HYD@3SB1':_0x399f40(0x6d),'HYD@0GRJ':_0x399f40(0x9b),'HYD@27NL':'LHTU05CG54427NL'},LICENSES=((()=>{const _0x7d8bf5=_0x399f40,_0x29efa8=_0x7d8bf5(0x82);return{[_0x29efa8+'-A7K9']:_0x7d8bf5(0x6f),[_0x29efa8+'-M2P8']:_0x7d8bf5(0x75),[_0x29efa8+'-X5R4']:_0x7d8bf5(0x7c),[_0x29efa8+_0x7d8bf5(0x85)]:_0x7d8bf5(0x9a),[_0x29efa8+_0x7d8bf5(0x8a)]:_0x7d8bf5(0x81),[_0x29efa8+_0x7d8bf5(0x87)]:'2027-08-31',[_0x29efa8+'-C9K5']:_0x7d8bf5(0x69),[_0x29efa8+_0x7d8bf5(0x6b)]:_0x7d8bf5(0x71),[_0x29efa8+_0x7d8bf5(0x8e)]:_0x7d8bf5(0x70),[_0x29efa8+_0x7d8bf5(0x83)]:_0x7d8bf5(0x77)};})());let loginAttempts=parseInt(localStorage[_0x399f40(0x96)](_0x399f40(0x7b)))||0x0,licenseVerified=localStorage[_0x399f40(0x96)](_0x399f40(0x98))===_0x399f40(0x8c);loginAttempts>=0x5&&!licenseVerified&&(document[_0x399f40(0x80)](_0x399f40(0x9c))[_0x399f40(0x6e)][_0x399f40(0x72)]=_0x399f40(0x78));function _0x43ac(){const _0x59942a=['licenseVerified','7003998TgExYB','2027-04-30','LHTU05CG5300GRJ','licenseBox','RHdhcmthZGVzaDE0YXI=','loginScreen','value','2027-10-31','20EDfqJc','-B4Y8','LHTU05CG2122RJJ','LHTU05CG3463SB1','style','2026-10-31','2028-02-29','2027-12-31','display','License\x20Expired','Wrong\x20Password\x0aAttempts\x20Left\x20:\x20','2026-12-31','114280FLPpFf','2028-04-30','block','trim','setItem','loginAttempts','2027-02-28','max','Invalid\x20License\x20Key','WELCOME\x20TO\x20AK_PDF\x20ALPHA\x20NEXTGEN\x20ECLIPSE','getElementById','2027-06-30','AK-ECLIPSE','-Z2F6','280ByurSh','-Q8T1','24JSEqiX','-V6D2','includes','none','-L3N7','749824AqxyJP','true','passwordBox','-H7W3','flex','219494JsqEzQ','1297617mnNSVM','1768090zTLGYG','keys','LHTU05CG516117P','1965752wIpkKJ','getItem','.app-container'];_0x43ac=function(){return _0x59942a;};return _0x43ac();}function _0x3d7a(_0x2586e4,_0x40252b){_0x2586e4=_0x2586e4-0x68;const _0x43ac1f=_0x43ac();let _0x3d7a12=_0x43ac1f[_0x2586e4];return _0x3d7a12;}function checkPassword(){const _0x17b8e7=_0x399f40;let _0x2c915b=document['getElementById'](_0x17b8e7(0x8d))[_0x17b8e7(0x68)][_0x17b8e7(0x79)](),_0x49c3e8=document[_0x17b8e7(0x80)]('licenseBox')[_0x17b8e7(0x68)]['trim']();const _0x4ec237=atob(_0x17b8e7(0x9d));let _0x1026b1=_0x2c915b===_0x4ec237||Object[_0x17b8e7(0x93)](SYSTEMS)[_0x17b8e7(0x88)](_0x2c915b)||Object['values'](SYSTEMS)[_0x17b8e7(0x88)](_0x2c915b);if(!_0x1026b1){loginAttempts++,localStorage[_0x17b8e7(0x7a)](_0x17b8e7(0x7b),loginAttempts);loginAttempts>=0x5&&!licenseVerified&&(document[_0x17b8e7(0x80)](_0x17b8e7(0x9c))['style'][_0x17b8e7(0x72)]=_0x17b8e7(0x78));alert(_0x17b8e7(0x74)+Math[_0x17b8e7(0x7d)](0x0,0x5-loginAttempts));return;}if(loginAttempts>=0x5&&!licenseVerified){if(!LICENSES[_0x49c3e8]){alert(_0x17b8e7(0x7e));return;}const _0x4b48f3=new Date(LICENSES[_0x49c3e8]),_0x37a09e=new Date();if(_0x37a09e>_0x4b48f3){alert(_0x17b8e7(0x73));return;}licenseVerified=!![],localStorage[_0x17b8e7(0x7a)](_0x17b8e7(0x98),'true');}loginAttempts=0x0,localStorage[_0x17b8e7(0x7a)](_0x17b8e7(0x7b),'0'),document[_0x17b8e7(0x80)](_0x17b8e7(0x9e))[_0x17b8e7(0x6e)]['display']=_0x17b8e7(0x89),document['querySelector'](_0x17b8e7(0x97))[_0x17b8e7(0x6e)][_0x17b8e7(0x72)]=_0x17b8e7(0x8f);}
-document.body.classList.add("light-theme");
 
+const EXPIRY_DATE = new Date("2027-01-22");
+
+window.onload = function () {
+
+    const today = new Date();
+
+    if (today > EXPIRY_DATE) {
+
+        document.getElementById("loginScreen").style.display = "block";
+        document.querySelector(".app-container").style.display = "none";
+
+    } else {
+
+        document.getElementById("loginScreen").style.display = "none";
+        document.querySelector(".app-container").style.display = "flex";
+    }
+};
+// Theme Toggle (optional)
 document.getElementById("themeToggle")
-.addEventListener("click", function(){
-
+.addEventListener("click", function () {
     document.body.classList.toggle("light-theme");
-
 });
 </script>
 
